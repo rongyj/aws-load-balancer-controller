@@ -148,7 +148,7 @@ In this walkthrough, you'll
                 paths:
         ```
 
-	- Adding tags to subnets for auto-discovery(instead of `alb.ingress.kubernetes.io/subnets` annotation)
+	- Adding tags to subnets for auto-discovery(instead of `alb.ingress.kubernetes.io/subnets` annotation) (According to this https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html, these annotations are only for kubernetes 1.15 before. There is no need manually add these annotations for version 1.15 or after)
 
 	    you must include the following tags on desired subnets.
 
